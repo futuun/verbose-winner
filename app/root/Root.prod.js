@@ -1,6 +1,6 @@
 import React, { PropTypes } from 'react'
 import { Provider } from 'react-redux'
-import Main from '../containers'
+import Main from '../containers/game'
 
 export default function Root(props) {
   const { store } = props

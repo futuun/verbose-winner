@@ -1,0 +1,17 @@
+exports[`test Initial state snapshot 1`] = `
+<div
+  className="game">
+  <div
+    className="board">
+    <div
+      className="missed">
+      [\"A\"]
+      <br />
+      \"KOPYTKO\"
+      <br />
+      [\"Y\"]
+      <br />
+    </div>
+  </div>
+</div>
+`;

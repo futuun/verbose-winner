@@ -1,0 +1,24 @@
+exports[`test Root: initialize app 1`] = `
+<div
+  style={
+    Object {
+      "height": "100%",
+    }
+  }>
+  <div
+    className="game">
+    <div
+      className="board">
+      <div
+        className="missed">
+        []
+        <br />
+        \"\"
+        <br />
+        []
+        <br />
+      </div>
+    </div>
+  </div>
+</div>
+`;
