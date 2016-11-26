@@ -1,0 +1,35 @@
+{
+  "setupFiles": [
+    "<rootDir>/jest/setup.js"
+  ],
+  "moduleFileExtensions": [
+    "js",
+    "jsx",
+    "json"
+  ],
+  "moduleDirectories": [
+    "node_modules",
+    "app"
+  ],
+  "moduleNameMapper": {
+    "^.+\\.(css|sass)$": "identity-obj-proxy",
+    "^.+\\.(png|ttf)$": "<rootDir>/config/fileMock.js"
+  },
+  "testRegex": "app/.*?\\.(spec)\\.js$",
+  "collectCoverage": false,
+  "collectCoverageFrom": [
+    "app/**/*.{js,jsx}",
+    "!app/**/*.dev.{js,jsx}",
+    "!app/**/index.{js,jsx}",
+    "!app/**/tools/*.{js,jsx}"
+  ],
+  "coverageThreshold": {
+    "global": {
+      "branches": 90,
+      "functions": 90,
+      "lines": 90,
+      "statements": 90
+    }
+  },
+  "verbose": true
+}

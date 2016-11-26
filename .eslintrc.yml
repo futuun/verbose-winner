@@ -1,0 +1,53 @@
+env:
+  es6: true
+  browser: true
+  node: true
+  jest: true
+
+plugins:
+  - import
+  - react
+
+parser:
+  babel-eslint
+
+globals:
+  __CLIENT__: true
+  __DISABLE_SSR__: true
+  __DEV__: true
+  __SERVER__: true
+  assert: true
+  expect: true
+  google: true
+  should: true
+
+extends:
+  - airbnb
+
+rules:
+  global-require: off
+  no-plusplus: off
+  import/no-extraneous-dependencies: off
+  react/jsx-filename-extension: off
+  import/extensions: off
+  comma-dangle:
+    - error
+    - only-multiline
+  import/no-unresolved:
+    - error
+    - commonjs: true
+      amd: true
+  no-console:
+    - error
+    - allow:
+      - error
+  semi:
+    - error
+    - never
+  react/jsx-max-props-per-line:
+    - error
+    - maximum: 2
+  react/no-direct-mutation-state: error
+  space-before-function-paren:
+    - error
+    - never

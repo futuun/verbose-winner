@@ -1,0 +1,13 @@
+# System and editor tools
+.vscode/
+
+# Miscellaneous
+build/
+dll/
+babel_cache/
+coverage/
+node_modules/
+jsconfig.json
+npm-debug.log
+yarn-error.log
+webpack.stats.json
