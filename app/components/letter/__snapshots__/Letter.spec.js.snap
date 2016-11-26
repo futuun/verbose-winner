@@ -1,0 +1,16 @@
+exports[`test Letter: exposed, active 1`] = `
+<div
+  className="letter">
+  A
+</div>
+`;
+
+exports[`test Letter: inactive 1`] = `
+<div
+  className="letter inactive" />
+`;
+
+exports[`test Letter: unexposed, active 1`] = `
+<div
+  className="letter" />
+`;

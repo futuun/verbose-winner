@@ -31,10 +31,33 @@ exports[`test Initial state snapshot 1`] = `
         </div>
       </div>
     </div>
-    \"KOPYTKO\"
-    <br />
-    [\"Y\"]
-    <br />
+    <div
+      className="word">
+      <div
+        className="letter inactive" />
+      <div
+        className="letter inactive" />
+      <div
+        className="letter inactive" />
+      <div
+        className="letter inactive" />
+      <div
+        className="letter" />
+      <div
+        className="letter" />
+      <div
+        className="letter" />
+      <div
+        className="letter">
+        Y
+      </div>
+      <div
+        className="letter" />
+      <div
+        className="letter" />
+      <div
+        className="letter" />
+    </div>
   </div>
 </div>
 `;

@@ -4,6 +4,7 @@ import styles from './styles.sass'
 import * as actionsToBind from './actions'
 import Folk from '../../components/folk'
 import MissedLetters from '../../components/missedLetters'
+import Word from '../../components/word'
 
 export class Game extends Component {
   /**
@@ -96,8 +97,10 @@ export class Game extends Component {
             <Folk missedLetters={missedLetters} />
             <MissedLetters letters={missedLetters} />
           </div>
-          {JSON.stringify(secretWord || '')}<br />
-          {JSON.stringify(exposedLetters || '')}<br />
+          <Word
+            exposedLetters={exposedLetters}
+            secretWord={secretWord}
+          />
         </div>
       </div>
     )

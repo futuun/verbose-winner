@@ -1,0 +1,97 @@
+exports[`test Word: 1 letter exposed, 2 occurrences 1`] = `
+<div
+  className="word">
+  <div
+    className="letter inactive" />
+  <div
+    className="letter inactive" />
+  <div
+    className="letter inactive" />
+  <div
+    className="letter inactive" />
+  <div
+    className="letter">
+    k
+  </div>
+  <div
+    className="letter" />
+  <div
+    className="letter" />
+  <div
+    className="letter" />
+  <div
+    className="letter" />
+  <div
+    className="letter">
+    k
+  </div>
+  <div
+    className="letter" />
+</div>
+`;
+
+exports[`test Word: multiple exposed letters 1`] = `
+<div
+  className="word">
+  <div
+    className="letter inactive" />
+  <div
+    className="letter inactive" />
+  <div
+    className="letter inactive" />
+  <div
+    className="letter inactive" />
+  <div
+    className="letter">
+    k
+  </div>
+  <div
+    className="letter">
+    o
+  </div>
+  <div
+    className="letter" />
+  <div
+    className="letter">
+    y
+  </div>
+  <div
+    className="letter" />
+  <div
+    className="letter">
+    k
+  </div>
+  <div
+    className="letter">
+    o
+  </div>
+</div>
+`;
+
+exports[`test Word: no exposed letters 1`] = `
+<div
+  className="word">
+  <div
+    className="letter inactive" />
+  <div
+    className="letter inactive" />
+  <div
+    className="letter inactive" />
+  <div
+    className="letter inactive" />
+  <div
+    className="letter" />
+  <div
+    className="letter" />
+  <div
+    className="letter" />
+  <div
+    className="letter" />
+  <div
+    className="letter" />
+  <div
+    className="letter" />
+  <div
+    className="letter" />
+</div>
+`;
