@@ -2,7 +2,12 @@ exports[`test Initial state snapshot 1`] = `
 <div
   className="game">
   <div
-    className="board">
+    className="board"
+    style={
+      Object {
+        "transform": "translate3d(0, 0, -896px)",
+      }
+    }>
     <div
       className="missed">
       <div

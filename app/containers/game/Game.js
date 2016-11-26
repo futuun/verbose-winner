@@ -84,9 +84,13 @@ export class Game extends Component {
       missedLetters,
     } = this.props.data
 
+    const zoom = window.innerWidth < 1920
+      ? -1920 + window.innerWidth
+      : window.innerWidth - 1920
+
     return (
       <div className={styles.game}>
-        <div className={styles.board}>
+        <div className={styles.board} style={{ transform: `translate3d(0, 0, ${zoom}px)` }}>
           <div className={styles.missed}>
             <Folk missedLetters={missedLetters} />
             {JSON.stringify(secretWord || '')}<br />
