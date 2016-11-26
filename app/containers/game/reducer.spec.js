@@ -76,6 +76,24 @@ describe('Game reducer: ', () => {
     })
   })
 
+  it(`creates ${types.theEnd}`, () => {
+    const theEnd = 'won'
+    const expectedAction = [
+      { type: types.theEnd, theEnd }
+    ]
+    const store = mockStore({ game: [] })
+    const currentAction = actions.theEnd(theEnd)
+
+    store.dispatch(currentAction)
+    expect(store.getActions()).toEqual(expectedAction)
+    expect(reducer(initialState, currentAction)).toEqual({
+      missedLetters: [],
+      exposedLetters: [],
+      wordFetching: false,
+      theEnd,
+    })
+  })
+
   it(`creates ${types.letterMissed} and adds new missed letter`, () => {
     const key = 'a'
     const expectedAction = [

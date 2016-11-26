@@ -1,0 +1,25 @@
+exports[`test TheEnd: game over 1`] = `
+<div
+  className="theEnd">
+  <span
+    className="title">
+    GAME OVER
+  </span>
+  <button
+    autoFocus={true}
+    className="btn"
+    onClick={[Function]}>
+    NEW WORD
+  </button>
+</div>
+`;
+
+exports[`test TheEnd: loading 1`] = `
+<div
+  className="theEnd">
+  <span
+    className="title">
+    LOADING
+  </span>
+</div>
+`;

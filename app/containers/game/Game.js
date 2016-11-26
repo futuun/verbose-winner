@@ -5,11 +5,11 @@ import * as actionsToBind from './actions'
 import Folk from '../../components/folk'
 import MissedLetters from '../../components/missedLetters'
 import Word from '../../components/word'
+import TheEnd from '../../components/theEnd'
 
 export class Game extends Component {
   /**
-   * Will dispatch char if pressed key was letter.
-   * Character will always be uppercase.
+   * Return uppercased letter from event
    *
    * @param {Event} e An event
    * @return {string} Character if it was letter or null
@@ -39,6 +39,23 @@ export class Game extends Component {
     this.props.fetchNewWord()
   }
 
+  componentWillUpdate(nextProps) {
+    if (nextProps.data.theEnd) return
+
+    if (nextProps.data.missedLetters.length > 10) {
+      this.props.theEnd('lost')
+    } else if (nextProps.data.exposedLetters.length === this.props.data.uniqLetters) {
+      this.props.theEnd('won')
+    }
+  }
+
+  /**
+   * Handles key up events
+   *
+   * @param {Event} e The keyUp event
+   * @returns {function|null} Function if letter was given
+   * @memberOf Game
+   */
   handleKeyUpEvent(e) {
     if (this.props.data.theEnd) return null
 
@@ -84,6 +101,8 @@ export class Game extends Component {
       exposedLetters,
       secretWord,
       missedLetters,
+      wordFetching,
+      theEnd,
     } = this.props.data
 
     const zoom = window.innerWidth < 1920
@@ -101,6 +120,12 @@ export class Game extends Component {
             exposedLetters={exposedLetters}
             secretWord={secretWord}
           />
+          {theEnd || wordFetching ? (
+            <TheEnd
+              loading={wordFetching}
+              newWord={this.props.fetchNewWord}
+            />
+          ) : null}
         </div>
       </div>
     )
@@ -111,11 +136,17 @@ Game.propTypes = {
   letterExposed: PropTypes.func.isRequired,
   letterMissed: PropTypes.func.isRequired,
   fetchNewWord: PropTypes.func.isRequired,
+  theEnd: PropTypes.func.isRequired,
   data: PropTypes.shape({
     missedLetters: PropTypes.arrayOf(PropTypes.string),
     exposedLetters: PropTypes.arrayOf(PropTypes.string),
     secretWord: PropTypes.string,
-    theEnd: PropTypes.bool,
+    theEnd: PropTypes.oneOfType([
+      PropTypes.bool,
+      PropTypes.string,
+    ]),
+    wordFetching: PropTypes.bool,
+    uniqLetters: PropTypes.number,
   }).isRequired,
 }
 

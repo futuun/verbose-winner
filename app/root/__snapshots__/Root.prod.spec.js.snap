@@ -47,6 +47,13 @@ exports[`test Root: initialize app 1`] = `
         <div
           className="letter inactive" />
       </div>
+      <div
+        className="theEnd">
+        <span
+          className="title">
+          LOADING
+        </span>
+      </div>
     </div>
   </div>
 </div>

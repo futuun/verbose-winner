@@ -1,5 +1,12 @@
 import types from './actionTypes'
 
+/**
+ * Returns action that setts given key as missed
+ *
+ * @export
+ * @param {string} key Character
+ * @returns
+ */
 export function letterMissed(key) {
   return {
     type: types.letterMissed,
@@ -7,6 +14,13 @@ export function letterMissed(key) {
   }
 }
 
+/**
+ * Returns action that setts given key as exposed
+ *
+ * @export
+ * @param {string} key Character
+ * @returns
+ */
 export function letterExposed(key) {
   return {
     type: types.letterExposed,
@@ -14,6 +28,26 @@ export function letterExposed(key) {
   }
 }
 
+/**
+ * Returns action that ends game
+ *
+ * @export
+ * @param {string} theEnd 'lost' || 'won'
+ * @returns
+ */
+export function theEnd(result) {
+  return {
+    type: types.theEnd,
+    theEnd: result,
+  }
+}
+
+/**
+ * Returns action that reset state and setts new word
+ *
+ * @param {string} word New secret word
+ * @returns
+ */
 function newWord(word) {
   return {
     type: types.newWord,
