@@ -1,0 +1,227 @@
+exports[`test Folk: 0 letters 1`] = `
+<div
+  className="folk">
+  <div
+    className="img bar" />
+</div>
+`;
+
+exports[`test Folk: 1 letter 1`] = `
+<div
+  className="folk">
+  <div
+    className="img bar" />
+  <div
+    className="img head" />
+</div>
+`;
+
+exports[`test Folk: 2 letters 1`] = `
+<div
+  className="folk">
+  <div
+    className="img bar" />
+  <div
+    className="img head" />
+  <div
+    className="img neck" />
+</div>
+`;
+
+exports[`test Folk: 3 letters 1`] = `
+<div
+  className="folk">
+  <div
+    className="img bar" />
+  <div
+    className="img head" />
+  <div
+    className="img neck" />
+  <div
+    className="img corpus" />
+</div>
+`;
+
+exports[`test Folk: 4 letters 1`] = `
+<div
+  className="folk">
+  <div
+    className="img bar" />
+  <div
+    className="img head" />
+  <div
+    className="img neck" />
+  <div
+    className="img corpus" />
+  <div
+    className="img right-arm" />
+</div>
+`;
+
+exports[`test Folk: 5 letters 1`] = `
+<div
+  className="folk">
+  <div
+    className="img bar" />
+  <div
+    className="img head" />
+  <div
+    className="img neck" />
+  <div
+    className="img corpus" />
+  <div
+    className="img right-arm" />
+  <div
+    className="img left-arm" />
+</div>
+`;
+
+exports[`test Folk: 6 letters 1`] = `
+<div
+  className="folk">
+  <div
+    className="img bar" />
+  <div
+    className="img head" />
+  <div
+    className="img neck" />
+  <div
+    className="img corpus" />
+  <div
+    className="img right-arm" />
+  <div
+    className="img left-arm" />
+  <div
+    className="img right-hand" />
+</div>
+`;
+
+exports[`test Folk: 7 letters 1`] = `
+<div
+  className="folk">
+  <div
+    className="img bar" />
+  <div
+    className="img head" />
+  <div
+    className="img neck" />
+  <div
+    className="img corpus" />
+  <div
+    className="img right-arm" />
+  <div
+    className="img left-arm" />
+  <div
+    className="img right-hand" />
+  <div
+    className="img left-hand" />
+</div>
+`;
+
+exports[`test Folk: 8 letters 1`] = `
+<div
+  className="folk">
+  <div
+    className="img bar" />
+  <div
+    className="img head" />
+  <div
+    className="img neck" />
+  <div
+    className="img corpus" />
+  <div
+    className="img right-arm" />
+  <div
+    className="img left-arm" />
+  <div
+    className="img right-hand" />
+  <div
+    className="img left-hand" />
+  <div
+    className="img right-leg" />
+</div>
+`;
+
+exports[`test Folk: 9 letters 1`] = `
+<div
+  className="folk">
+  <div
+    className="img bar" />
+  <div
+    className="img head" />
+  <div
+    className="img neck" />
+  <div
+    className="img corpus" />
+  <div
+    className="img right-arm" />
+  <div
+    className="img left-arm" />
+  <div
+    className="img right-hand" />
+  <div
+    className="img left-hand" />
+  <div
+    className="img right-leg" />
+  <div
+    className="img left-leg" />
+</div>
+`;
+
+exports[`test Folk: 10 letters 1`] = `
+<div
+  className="folk">
+  <div
+    className="img bar" />
+  <div
+    className="img head" />
+  <div
+    className="img neck" />
+  <div
+    className="img corpus" />
+  <div
+    className="img right-arm" />
+  <div
+    className="img left-arm" />
+  <div
+    className="img right-hand" />
+  <div
+    className="img left-hand" />
+  <div
+    className="img right-leg" />
+  <div
+    className="img left-leg" />
+  <div
+    className="img right-foot" />
+</div>
+`;
+
+exports[`test Folk: 11 letters 1`] = `
+<div
+  className="folk">
+  <div
+    className="img bar" />
+  <div
+    className="img head" />
+  <div
+    className="img neck" />
+  <div
+    className="img corpus" />
+  <div
+    className="img right-arm" />
+  <div
+    className="img left-arm" />
+  <div
+    className="img right-hand" />
+  <div
+    className="img left-hand" />
+  <div
+    className="img right-leg" />
+  <div
+    className="img left-leg" />
+  <div
+    className="img right-foot" />
+  <div
+    className="img left-foot" />
+</div>
+`;

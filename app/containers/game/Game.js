@@ -2,6 +2,7 @@ import React, { Component, PropTypes } from 'react'
 import { connect } from 'react-redux'
 import styles from './styles.sass'
 import * as actionsToBind from './actions'
+import Folk from '../../components/folk'
 
 export class Game extends Component {
   /**
@@ -87,7 +88,7 @@ export class Game extends Component {
       <div className={styles.game}>
         <div className={styles.board}>
           <div className={styles.missed}>
-            {JSON.stringify(missedLetters || '')}<br />
+            <Folk missedLetters={missedLetters} />
             {JSON.stringify(secretWord || '')}<br />
             {JSON.stringify(exposedLetters || '')}<br />
           </div>

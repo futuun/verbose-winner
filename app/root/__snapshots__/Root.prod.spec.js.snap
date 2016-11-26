@@ -11,8 +11,11 @@ exports[`test Root: initialize app 1`] = `
       className="board">
       <div
         className="missed">
-        []
-        <br />
+        <div
+          className="folk">
+          <div
+            className="img bar" />
+        </div>
         \"\"
         <br />
         []

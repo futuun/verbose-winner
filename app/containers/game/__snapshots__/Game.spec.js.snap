@@ -5,8 +5,13 @@ exports[`test Initial state snapshot 1`] = `
     className="board">
     <div
       className="missed">
-      [\"A\"]
-      <br />
+      <div
+        className="folk">
+        <div
+          className="img bar" />
+        <div
+          className="img head" />
+      </div>
       \"KOPYTKO\"
       <br />
       [\"Y\"]
