@@ -1,0 +1,42 @@
+exports[`test MissedLetters: empty 1`] = `null`;
+
+exports[`test MissedLetters: more than one letter 1`] = `
+<div
+  className="missedLetters">
+  <div
+    className="title">
+    YOU MISSED:
+  </div>
+  <div
+    className="letters">
+    <span>
+      a
+    </span>
+    <span>
+      b
+    </span>
+    <span>
+      c
+    </span>
+    <span>
+      d
+    </span>
+  </div>
+</div>
+`;
+
+exports[`test MissedLetters: one letter 1`] = `
+<div
+  className="missedLetters">
+  <div
+    className="title">
+    YOU MISSED:
+  </div>
+  <div
+    className="letters">
+    <span>
+      x
+    </span>
+  </div>
+</div>
+`;

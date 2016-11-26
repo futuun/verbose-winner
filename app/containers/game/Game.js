@@ -3,6 +3,7 @@ import { connect } from 'react-redux'
 import styles from './styles.sass'
 import * as actionsToBind from './actions'
 import Folk from '../../components/folk'
+import MissedLetters from '../../components/missedLetters'
 
 export class Game extends Component {
   /**
@@ -93,9 +94,10 @@ export class Game extends Component {
         <div className={styles.board} style={{ transform: `translate3d(0, 0, ${zoom}px)` }}>
           <div className={styles.missed}>
             <Folk missedLetters={missedLetters} />
-            {JSON.stringify(secretWord || '')}<br />
-            {JSON.stringify(exposedLetters || '')}<br />
+            <MissedLetters letters={missedLetters} />
           </div>
+          {JSON.stringify(secretWord || '')}<br />
+          {JSON.stringify(exposedLetters || '')}<br />
         </div>
       </div>
     )

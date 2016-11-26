@@ -17,11 +17,24 @@ exports[`test Initial state snapshot 1`] = `
         <div
           className="img head" />
       </div>
-      \"KOPYTKO\"
-      <br />
-      [\"Y\"]
-      <br />
+      <div
+        className="missedLetters">
+        <div
+          className="title">
+          YOU MISSED:
+        </div>
+        <div
+          className="letters">
+          <span>
+            A
+          </span>
+        </div>
+      </div>
     </div>
+    \"KOPYTKO\"
+    <br />
+    [\"Y\"]
+    <br />
   </div>
 </div>
 `;

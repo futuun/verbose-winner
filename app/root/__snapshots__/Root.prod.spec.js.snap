@@ -21,11 +21,11 @@ exports[`test Root: initialize app 1`] = `
           <div
             className="img bar" />
         </div>
-        \"\"
-        <br />
-        []
-        <br />
       </div>
+      \"\"
+      <br />
+      []
+      <br />
     </div>
   </div>
 </div>
