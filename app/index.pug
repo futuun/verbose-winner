@@ -2,7 +2,8 @@ doctype html
 html
   head
     title= htmlWebpackPlugin.options.title
-    each val in htmlWebpackPlugin.options.dll
-      script(src=val, type='text/javascript')
+    if htmlWebpackPlugin.options.dll
+      each val in htmlWebpackPlugin.options.dll
+        script(src=val, type='text/javascript')
   body
     #root

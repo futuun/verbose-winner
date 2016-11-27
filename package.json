@@ -12,9 +12,10 @@
   "bugs": {
     "url": "https://github.com/futuun/verbose-winner/issues"
   },
-  "homepage": "http://naf.gl/hangman",
+  "homepage": "http://hangman-dot-gl-naf.appspot.com/",
   "scripts": {
     "start": "node ./webpack.server.js",
+    "build": "NODE_ENV=production ./node_modules/.bin/webpack --config webpack.production.js",
     "dll": "NODE_ENV=production ./node_modules/.bin/webpack --config webpack.dll.js",
     "analyze": "NODE_ENV=production ./node_modules/.bin/webpack --config config/webpack.production.js --profile --json > webpack.stats.json",
     "lint": "./node_modules/.bin/eslint --ext .js app test",
@@ -47,6 +48,7 @@
     "eslint-plugin-react": "^6.7.1",
     "exports-loader": "^0.6.3",
     "express": "^4.14.0",
+    "extract-text-webpack-plugin": "2.0.0-beta.4",
     "file-loader": "^0.9.0",
     "html-webpack-plugin": "^2.24.1",
     "http-proxy": "^1.15.2",
